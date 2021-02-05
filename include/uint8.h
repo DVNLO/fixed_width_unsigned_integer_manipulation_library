@@ -1,5 +1,4 @@
-#ifndef FIXED_WIDTH_UNSIGNED_INTEGER_MANIPULATION_LIB_UINT8_H
-#define FIXED_WIDTH_UNSIGNED_INTEGER_MANIPULATION_LIB_UINT8_H
+#pragma once
 
 #include <stdint.h>
 
@@ -34,5 +33,3 @@ fwuim_toggle_bit_uint8(uint8_t const bit_idx, uint8_t const vals)
 {
     return (uint8_t)((uint8_t)(0x1) << bit_idx) ^ vals;
 }
-
-#endif // FIXED_WIDTH_UNSIGNED_INTEGER_MANIPULATION_LIB_UINT8_H
