@@ -1,0 +1,9 @@
+#ifndef FIXED_WIDTH_UNSIGNED_INTEGER_MANIPULATION_LIB_TEST_CONSTANTS_H
+#define FIXED_WIDTH_UNSIGNED_INTEGER_MANIPULATION_LIB_TEST_CONSTANTS_H
+
+#include <stdint.h>
+
+extern uint8_t const fwuim_test_fail;
+extern uint8_t const fwuim_test_pass;
+
+#endif  // FIXED_WIDTH_UNSIGNED_INTEGER_MANIPULATION_LIB_TEST_CONSTANTS_H
