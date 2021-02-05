@@ -180,7 +180,7 @@ fwuim_test_uint8(void)
 {
     uint8_t rc; // return code
     rc = fwuim_test_uint8_get_all_0_bits();
-    if(rc)
+    if(rc == fwuim_test_pass)
     {
         puts("fwuim_test_uint8_get_all_0_bits passed");
     }
@@ -189,7 +189,7 @@ fwuim_test_uint8(void)
         puts("fwuim_test_uint8_get_all_0_bits failed");
     }
     rc = fwuim_test_uint8_get_all_1_bits();
-    if(rc)
+    if(rc == fwuim_test_pass)
     {
         puts("fwuim_test_uint8_get_all_1_bits passed");
     }
@@ -198,7 +198,7 @@ fwuim_test_uint8(void)
         puts("fwuim_test_uint8_get_all_1_bits failed");
     }
     rc = fwuim_test_uint8_set_all_0_bits();
-    if(rc)
+    if(rc == fwuim_test_pass)
     {
         puts("fwuim_test_uint8_set_all_0_bits passed");
     }
@@ -207,7 +207,7 @@ fwuim_test_uint8(void)
         puts("fwuim_test_uint8_set_all_0_bits failed");
     }
     rc = fwuim_test_uint8_set_all_1_bits();
-    if(rc)
+    if(rc == fwuim_test_pass)
     {
         puts("fwuim_test_uint8_set_all_1_bits passed");
     }
@@ -216,7 +216,7 @@ fwuim_test_uint8(void)
         puts("fwuim_test_uint8_set_all_1_bits failed");
     }
     rc = fwuim_test_uint8_clear_all_0_bits();
-    if(rc)
+    if(rc == fwuim_test_pass)
     {
         puts("fwuim_test_uint8_clear_all_0_bits passed");
     }
@@ -225,7 +225,7 @@ fwuim_test_uint8(void)
         puts("fwuim_test_uint8_clear_all_0_bits failed");
     }
     rc = fwuim_test_uint8_clear_all_1_bits();
-    if(rc)
+    if(rc == fwuim_test_pass)
     {
         puts("fwuim_test_uint8_clear_all_1_bits passed");
     }
@@ -234,7 +234,7 @@ fwuim_test_uint8(void)
         puts("fwuim_test_uint8_clear_all_1_bits failed");
     }
     rc = fwuim_test_uint8_toggle_all_0_bits();
-    if(rc)
+    if(rc == fwuim_test_pass)
     {
         puts("fwuim_test_uint8_toggle_all_0_bits passed");
     }
@@ -243,7 +243,7 @@ fwuim_test_uint8(void)
         puts("fwuim_test_uint8_toggle_all_0_bits failed");
     }
     rc = fwuim_test_uint8_toggle_all_1_bits();
-    if(rc)
+    if(rc == fwuim_test_pass)
     {
         puts("fwuim_test_uint8_toggle_all_1_bits passed");
     }

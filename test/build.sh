@@ -1,6 +1,6 @@
 #! /bin/bash
 #-frecord-gcc-switches
-options="-std=c11 -march=native -pipe -O3 -fgcse-las -fno-common -fno-ipa-sra -fno-merge-constants -fno-inline-functions-called-once -funroll-loops -fverbose-asm -fstrict-overflow"
+options="-std=c11 -march=native -pipe -O3 -flto -fwhole-program -fgcse-las -fno-common -fno-ipa-sra -fno-merge-constants -fno-inline-functions-called-once -funroll-loops -fverbose-asm -fstrict-overflow"
 #-Warith-conversion 
 warnings="-Wall -Walloc-zero -Walloca -Wattribute-alias=2 -Wc++-compat -Wcast-align -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wempty-body -Werror -Wexpansion-to-defined -Wextra -Wfloat-equal -Wformat-overflow -Wformat-security -Wformat-signedness -Wformat-truncation -Winit-self -Wjump-misses-init -Wnull-dereference -Wopenmp-simd -Woverride-init -Wpedantic -Wpointer-arith -Wshadow -Wstack-protector -Wstringop-overflow=2 -Wswitch-default -Wswitch-enum -Wundef -Wunknown-pragmas -Wunsafe-loop-optimizations -Wunused -Wunused-but-set-parameter -Wunused-but-set-variable -Wunused-function -Wunused-label -Wunused-local-typedefs -Wunused-macros -Wunused-parameter -Wunused-value -Wunused-variable -Wunused-variable"
-gcc $options $warnings -iquote ./../include ./../source/uint8.c ./test.c ./test_uint8.c ./test_constants.c
+gcc $options $warnings -iquote ./../include ./../source/uint8.c ./test.c ./test_uint8.c ./test_uint16.c ./test_uint32.c ./test_uint64.c ./test_constants.c
