@@ -16,7 +16,9 @@ set(FWUIM_LIB_COMPILE_OPTIONS
     "-fno-merge-constants"
     "-fno-inline-functions-called-once"
     "-funroll-loops"
-    "-fstrict-overflow")
+    "-fstrict-overflow"
+    "-fdelete-null-pointer-checks"
+    "-fstack-protector")
 
 set(FWUIM_LIB_COMPILE_WARNINGS 
     "-Wall"
@@ -28,41 +30,25 @@ set(FWUIM_LIB_COMPILE_WARNINGS
     "-Wdouble-promotion"
     "-Wduplicated-branches"
     "-Wduplicated-cond"
-    "-Wempty-body"
     "-Werror"
-    "-Wexpansion-to-defined"
     "-Wextra"
     "-Wfloat-equal"
-    "-Wformat-overflow"
     "-Wformat-security"
     "-Wformat-signedness"
     "-Wformat-truncation"
     "-Winit-self"
     "-Wjump-misses-init"
     "-Wnull-dereference"
-    "-Wopenmp-simd"
-    "-Woverride-init"
     "-Wpedantic"
-    "-Wpointer-arith"
     "-Wshadow"
     "-Wstack-protector"
     "-Wstringop-overflow=2"
     "-Wswitch-default"
     "-Wswitch-enum"
     "-Wundef"
-    "-Wunknown-pragmas"
     "-Wunsafe-loop-optimizations"
     "-Wunused"
-    "-Wunused-but-set-parameter"
-    "-Wunused-but-set-variable"
-    "-Wunused-function"
-    "-Wunused-label"
-    "-Wunused-local-typedefs"
-    "-Wunused-macros"
-    "-Wunused-parameter"
-    "-Wunused-value"
-    "-Wunused-variable"
-    "-Wunused-variable")
+    "-Wunused-macros")
 
 # https://cmake.org/cmake/help/latest/command/project.html#command:project
 project(${FWUIM_LIB_PROJ_NAME}
