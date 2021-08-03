@@ -11,6 +11,11 @@ FWUIM depends on the following softwares. Please ensure these software are avail
 * [make](https://www.gnu.org/software/make/)
 * [cmake](https://cmake.org/install/)
 
+On Ubuntu these prerequisites can be installed by running the following command
+```sh
+sudo apt install -y gcc make cmake ;
+```
+
 ### Installation
 1. Clone the repo
    ```sh
